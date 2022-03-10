@@ -25,7 +25,7 @@ class Main extends React.Component {
         <header>
           Twoje IP:
         </header> 
-        <span id='moving'>{this.state.ip}</span> 
+        <span className='moving'>{this.state.ip}</span> 
       </span>
     )
   }
