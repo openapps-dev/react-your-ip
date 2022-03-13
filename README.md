@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Getting Started with React-your-ip
 
-This app check ip of user with help of [ip-api.com](http://ip-api.com)
+This simple app check ip of user with help of [ip-api.com](http://ip-api.com)
 
 ## Available Scripts
 
