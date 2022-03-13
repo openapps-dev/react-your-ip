@@ -23,15 +23,20 @@ class Main extends React.Component {
   render(props) {
     console.log(this.state.ip)
     return (
-      <span className="ip">
-        <header>
-          Twoje IP:
-        </header> 
-        <span className='moving'>{this.state.ip}</span>
-        <footer>
-          <span className='country'>Kraj: {this.state.country}</span>
+      <>
+        <span className="ip">
+          <header>
+            Twoje IP:
+          </header> 
+          <span className='moving'>{this.state.ip}</span>
+          <footer>
+            <span className='country'>Kraj: {this.state.country}</span>
+          </footer>
+        </span>
+        <footer className='creds'>
+          Powered by: <a href='https://ip-api.com'>ip-api.com</a>
         </footer>
-      </span>
+      </>
     )
   }
 }
