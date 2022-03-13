@@ -7,7 +7,8 @@ class Main extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      ip: ''
+      ip: '...',
+      country: '...',
     }
     this.showIP()
   }
@@ -15,7 +16,8 @@ class Main extends React.Component {
     let data = await fetch("http://ip-api.com/json")
     let json = await data.json()
     this.setState({
-      ip: json.query
+      ip: json.query,
+      country: json.country,
     });
   }
   render(props) {
@@ -25,7 +27,10 @@ class Main extends React.Component {
         <header>
           Twoje IP:
         </header> 
-        <span className='moving'>{this.state.ip}</span> 
+        <span className='moving'>{this.state.ip}</span>
+        <footer>
+          <span className='country'>Kraj: {this.state.country}</span>
+        </footer>
       </span>
     )
   }

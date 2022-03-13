@@ -19,6 +19,13 @@ body {
   font-size: calc(100vw / 15);
 }
 
+.country {
+  text-align: center;
+  color: white;
+  font-size: calc(100vw / 30);
+  vertical-align: top;
+}
+
 .moving {
   font-weight: 800;
   font-family:arial black;
