@@ -55,7 +55,7 @@ body {
 
 @media (max-width: 600px) {
   .ip {
-    font-size: calc(100vw / 8);
+    font-size: calc(100vw / 9);
   }
   .country {
     font-size: calc(100vw / 15);
